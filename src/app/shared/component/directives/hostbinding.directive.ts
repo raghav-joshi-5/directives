@@ -4,9 +4,12 @@ import { Directive, HostBinding, HostListener, OnInit } from '@angular/core';
   selector: '[appHostbinding]',
 })
 export class HostbindingDirective implements OnInit {
-  @HostBinding('style.color') color: string = 'red'; //set the value of color to red by default
-  @HostBinding('style.backgroundColor') bgColor: string = 'yellow'; //set the value of bgColor to yellow by default
+  @HostBinding('style.color') color!: string;
+  //set the value of color to red by default
+
+  @HostBinding('style.backgroundColor') bgColor!: string; //set the value of bgColor to yellow by default
   constructor() {}
+
   ngOnInit(): void {}
   @HostBinding('style.border') border: string = '1px solid black'; //set the value of border to 1px solid black by default
   @HostBinding('style.padding') padding: string = '10px'; //set the value of padding to 10px by default
@@ -21,6 +24,6 @@ export class HostbindingDirective implements OnInit {
   @HostListener('mouseout') mouseout() {
     this.color = 'red'; //change the value of color to red on mouseleave
     this.bgColor = 'yellow'; //change the value of bgColor to yellow on mouseleave
-    this.borderRadius = '10px'; //change the value of borderRadius to 10px on mouseleave
+    this.borderRadius = '20px'; //change the value of borderRadius to 10px on mouseleave
   }
 }

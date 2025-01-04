@@ -8,9 +8,25 @@ import { EventdirDirective } from './shared/component/directives/eventdir.direct
 import { NavbarComponent } from './shared/component/navbar/navbar.component';
 import { DropdownDirective } from './shared/component/directives/dropdown.directive';
 import { HostbindingDirective } from './shared/component/directives/hostbinding.directive';
+import { CreditcarddirComponent } from './shared/component/directives/creditcarddir/creditcarddir.component';
+import { CreditcardDirective } from './shared/component/directives/creditcard.directive';
+import { TolowercasedirDirective } from './shared/component/directives/tolowercasedir.directive';
+import { DropdownliDirective } from './shared/component/directives/dropdownli.directive';
 
 @NgModule({
-  declarations: [AppComponent, csshighlighter, RendererDirective, EventdirDirective, NavbarComponent, DropdownDirective, HostbindingDirective],
+  declarations: [
+    AppComponent,
+    csshighlighter,
+    RendererDirective,
+    EventdirDirective,
+    NavbarComponent,
+    DropdownDirective,
+    HostbindingDirective,
+    CreditcarddirComponent,
+    CreditcardDirective,
+    TolowercasedirDirective,
+    DropdownliDirective,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
