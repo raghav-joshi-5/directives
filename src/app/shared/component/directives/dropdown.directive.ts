@@ -19,6 +19,7 @@ export class DropdownDirective implements OnInit {
   toggleOpen() {
     // function to toggle the class
     const nextSibling = this._elRef.nativeElement.nextElementSibling; // get the next sibling of the element
+
     if (nextSibling.classList.contains('show')) {
       // check if the class is already present or not if present  then remove it  else add it
       this._renderer.removeClass(nextSibling, 'show'); // remove the class if present
