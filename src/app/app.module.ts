@@ -11,7 +11,7 @@ import { HostbindingDirective } from './shared/component/directives/hostbinding.
 import { CreditcarddirComponent } from './shared/component/directives/creditcarddir/creditcarddir.component';
 import { CreditcardDirective } from './shared/component/directives/creditcard.directive';
 import { TolowercasedirDirective } from './shared/component/directives/tolowercasedir.directive';
-import { DropdownliDirective } from './shared/component/directives/dropdownli.directive';
+
 import { HighlighterDirective } from './shared/component/directives/highlighter.directive';
 
 @NgModule({
@@ -26,7 +26,6 @@ import { HighlighterDirective } from './shared/component/directives/highlighter.
     CreditcarddirComponent,
     CreditcardDirective,
     TolowercasedirDirective,
-    DropdownliDirective,
     HighlighterDirective,
   ],
   imports: [BrowserModule],
