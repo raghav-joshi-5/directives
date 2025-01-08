@@ -13,6 +13,8 @@ import { CreditcardDirective } from './shared/component/directives/creditcard.di
 import { TolowercasedirDirective } from './shared/component/directives/tolowercasedir.directive';
 
 import { HighlighterDirective } from './shared/component/directives/highlighter.directive';
+import { CardComponent } from './shared/component/card/card.component';
+import { CarddDirective } from './shared/component/directives/cardd.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { HighlighterDirective } from './shared/component/directives/highlighter.
     CreditcardDirective,
     TolowercasedirDirective,
     HighlighterDirective,
+    CardComponent,
+    CarddDirective,
   ],
   imports: [BrowserModule],
   providers: [],
